@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CLIENT_ID</key>
+	<string>51050949696-odldqfiivc6htb9pqgsueilrenk3rqdl.apps.googleusercontent.com</string>
+	<key>REVERSED_CLIENT_ID</key>
+	<string>com.googleusercontent.apps.51050949696-odldqfiivc6htb9pqgsueilrenk3rqdl</string>
+	<key>API_KEY</key>
+	<string>AIzaSyC3Rx_EOSbsybmn5tzltC4PC76Of8qR7Rw</string>
+	<key>GCM_SENDER_ID</key>
+	<string>51050949696</string>
+	<key>PLIST_VERSION</key>
+	<string>1</string>
+	<key>BUNDLE_ID</key>
+	<string>com.karolinaprzekota.cantwait28</string>
+	<key>PROJECT_ID</key>
+	<string>netflix-cantwait281</string>
+	<key>STORAGE_BUCKET</key>
+	<string>netflix-cantwait281.appspot.com</string>
+	<key>IS_ADS_ENABLED</key>
+	<false></false>
+	<key>IS_ANALYTICS_ENABLED</key>
+	<false></false>
+	<key>IS_APPINVITE_ENABLED</key>
+	<true></true>
+	<key>IS_GCM_ENABLED</key>
+	<true></true>
+	<key>IS_SIGNIN_ENABLED</key>
+	<true></true>
+	<key>GOOGLE_APP_ID</key>
+	<string>1:51050949696:ios:520bc4f5b0f972b21843a5</string>
+</dict>
+</plist>
