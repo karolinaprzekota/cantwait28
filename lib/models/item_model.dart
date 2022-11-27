@@ -5,5 +5,12 @@ class ItemModel {
   final DateTime releaseDate;
 
   ItemModel(
-      { required this.id, required this.title, required this.imageURL, required this.releaseDate});
+      {required this.id,
+      required this.title,
+      required this.imageURL,
+      required this.releaseDate});
+
+  String daysLeft() {
+    return releaseDate.difference(DateTime.now()).inDays.toString();
+  }
 }
