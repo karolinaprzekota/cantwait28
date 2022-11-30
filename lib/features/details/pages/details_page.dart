@@ -5,7 +5,8 @@ import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 
 class DetailsPage extends StatelessWidget {
-  const DetailsPage({ required this.id,
+  const DetailsPage({
+    required this.id,
     Key? key,
   }) : super(key: key);
 
@@ -14,35 +15,33 @@ class DetailsPage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(
-        title: const Text('Can\'t Wait 🤩'),
-      ),
-      body:BlocProvider(
-      create: (context) => DetailsCubit(ItemsRepository())..getItemWithID(id),
-      child: BlocBuilder<DetailsCubit, DetailsState>(
-        builder: (context, state) {
-          final itemModel = state.itemModel;
-          if (itemModel == null) {
-            return const CircularProgressIndicator();
-          }
-          return ListView(
-            padding: const EdgeInsets.symmetric(
-              vertical: 20,
-            ),
-            children: [
-              _ListViewItem(
-                itemModel: itemModel,
-              )
-            ],
-          );
-        },
-      ),
-    )
-    );
+        appBar: AppBar(
+          title: const Text('Can\'t Wait 🤩'),
+        ),
+        body: BlocProvider(
+          create: (context) =>
+              DetailsCubit(ItemsRepository())..getItemWithID(id),
+          child: BlocBuilder<DetailsCubit, DetailsState>(
+            builder: (context, state) {
+              final itemModel = state.itemModel;
+              if (itemModel == null) {
+                return const CircularProgressIndicator();
+              }
+              return ListView(
+                padding: const EdgeInsets.symmetric(
+                  vertical: 20,
+                ),
+                children: [
+                  _ListViewItem(
+                    itemModel: itemModel,
+                  )
+                ],
+              );
+            },
+          ),
+        ));
   }
 }
-
-
 
 class _ListViewItem extends StatelessWidget {
   const _ListViewItem({
@@ -93,7 +92,7 @@ class _ListViewItem extends StatelessWidget {
                         ),
                         const SizedBox(height: 10),
                         Text(
-                          itemModel.releaseDate.toString().toString(),
+                          itemModel.releaseDateFormatted(),
                         ),
                       ],
                     ),
